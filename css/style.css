@@ -1,0 +1,645 @@
+* {
+    background-color: aliceblue;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Mycomicsans;
+    src: url(fonts/comic_sans_MS.woff);
+ }
+
+ .clear {
+     clear: both;
+ }
+
+body {
+    background-color: #ffcc66;
+    width: 100vw;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0vw;
+}
+
+.top {
+    background-color: #663300;
+    width: 100vw;
+    height: 2.8vw;
+    top: 0vw;
+    position: absolute;
+    align-items: center;
+}
+
+.header {
+    height: 7.5vw;
+    width: 100vw;
+    border: 0.1vw solid black;
+    background-color: #ffcc66;
+    display: flex;
+    position: relative;
+    top: 2.8vw;
+    align-items: center;
+}
+
+.logo {
+    width: 12.4vw;
+    height: 4.3vw;
+    overflow: hidden;
+    float: left;
+    align-items: center;
+    margin-left: 1vw;
+}
+
+.logo a img {
+    width: 12.4vw;
+    height: 4.3vw;
+    background-color: #ffcc66;
+}
+
+.open-menu {
+    display: none;
+}
+
+.main-menu {
+    width: fit-content;
+    position: absolute;
+    right: 0vw;
+    background-color: transparent;
+    padding: 0vw;
+    align-items: center;
+}
+
+.main-menu ul {
+background-color: transparent;
+width: max-content;
+padding: 0vw 0vw;
+border-radius: 0.5vw;
+align-items: center;
+}
+
+.main-menu ul li {
+list-style-type: none;
+float: left;
+background-color: transparent;
+align-items: center;
+position: relative;
+
+}
+
+.main-menu ul li a {
+    text-decoration: none;
+    padding: 0.2vw 3vw;
+    background-color: transparent;
+    font-size: 1.7vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: relative;
+    display: block;
+    border: 0.1vw solid black;
+    background-color: #663300;
+    border-radius: 2vw 2vw 0vw 0vw;
+}
+
+.main-menu ul li a:hover {
+    opacity: 0.9;
+}
+
+
+.user {
+    background-color: transparent;
+    position: absolute;
+    width: 100vw;
+    height: 2.8vw;
+    padding: 0vw;
+    top: 0vw;
+    align-items: center;
+}
+
+.user ul {
+    background-color: inherit;
+    margin-top: 0vw;
+    position: relative;
+    float: right;
+    
+}
+
+
+.user ul li {
+    float: left;
+    list-style-type: none;
+    background-color: inherit;
+    position: relative;
+    padding-top: 0.5vw;
+    
+}
+
+.user ul li a {
+    font-size: 1.2vw;
+    text-decoration: none;
+    padding-top: 0.1vw ;
+    padding-bottom: 0.1vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    background-color: transparent;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+}
+
+
+.wrapper {
+    background-color: transparent;
+    width: 100vw;
+    height: fit-content;
+    margin-top: 4vw;
+}
+
+.main-att {
+    background-color: black;
+    width: 100vw;
+    height: 50vw;
+    overflow: hidden;
+}
+
+.wrapper .main-att .cakepic a img {
+    width: 100vw;
+}
+
+.sub-att {
+    width: 100vw;
+    height: fit-content;
+    background-color: white;    
+    margin-top: 1vw;
+    padding-left: 0vw;
+    padding-right: 0vw;
+}
+
+.sub-att .columns {
+    width: 32vw;
+    height: 30vw;
+    background-color: black;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.sub-att .columns .image {
+    display: block;
+    width: auto;
+    height: 100%;
+}
+
+.sub-att .cakes {
+    margin-right: 1vw;
+    margin-left: 0vw;
+}
+
+.sub-att .bake-request {
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+.sub-att .columns .text {
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 2vw;
+    margin-bottom: auto;
+    background-color: transparent;
+    opacity: 0.8;
+    transform: scale(0);
+    transition: .3s ease;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.sub-att .columns:hover .text {
+    transform: scale(1);
+}
+
+.sub-att .columns:hover .image {
+    opacity: 0.2;
+}
+
+.sub-att .columns .text h4 {
+    color: white;
+    background-color: transparent;
+    font-size: 2.6vw;
+}
+
+.sub-att .columns .text button {
+    width: 8.2vw;
+    height: 3vw;
+    margin-top: -1vw;
+    background-color: #ffcc66;
+    box-shadow: 0.1vw 0.1vw #663300;
+    border: 0.1vw solid #663300;
+}
+
+.sub-att .columns .text button a {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    text-decoration: solid;
+    font-size: 1.1vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    display: block;
+}
+
+.sub-att .columns .text p {
+    color: white;
+    background-color: transparent;
+    font-size: 1vw;
+    line-height: 2vw;
+}
+
+.sub-att .baking-tips .text {
+    margin-top: 0vw;
+}
+
+footer {
+    height: 4vw;
+    width: 100vw;
+    background-color: #663300;
+    position: relative;
+    margin-top: 5vw;
+
+}
+
+.wrapper h3 {
+    text-align: center;
+    padding-top: 2vw;
+}
+
+.wrapper .cake {
+    height: 30vw;
+    width: 31.3333333vw;    
+    margin: 1vw;
+    float: left;
+    display: block;
+    position: relative;
+    background-color: #663300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:620px) {
+    /*  For mobile phones:*/
+    * {
+        background-color: aliceblue;
+        box-sizing: border-box;
+    }
+    
+    @font-face {
+        font-family: Mycomicsans;
+        src: url(fonts/comic_sans_MS.woff);
+     }
+    
+     .clear {
+         clear: both;
+     }
+    
+    body {
+        background-color: #ffcc66;
+        width: 100vw;
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0vw;
+    }
+    
+    .top {
+        background-color: #663300;
+        width: 100vw;
+        height: 5.3vw;
+        top: 0vw;
+        position: absolute;
+        align-items: center;
+        display: block;
+    }
+
+    .user {
+        background-color: transparent;
+        position: absolute;
+        width: 100vw;
+        height: 5.3vw;
+        padding: 0vw 0vw 1vw 0vw;
+        top: 0vw;
+        align-items: center;
+    }
+    
+    .user ul {
+        background-color: inherit;
+        margin-top: 0vw;
+        position: relative;
+        float: right;
+        
+    }
+    
+    
+    .user ul li {
+        float: left;
+        list-style-type: none;
+        background-color: inherit;
+        position: relative;
+        padding-bottom: 0.5vw;
+        
+    }
+    
+    .user ul li a {
+        font-size: 3vw;
+        height: 5.3vw;
+        text-decoration: none;
+        padding-top: 0.2vw ;
+        padding-bottom: 0.2vw;
+        padding-left: 0.5vw;
+        padding-right: 0.5vw;
+        background-color: transparent;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        display: block;
+    }
+    
+    .user ul li a.signup {
+        border-right: none;
+    }
+    
+    .user ul li a.login {
+        border-left: none;
+    }
+    
+    .header {
+        height: 12.3vw;
+        width: 100vw;
+        border: none;
+        border-bottom: 0.1vw solid black;
+        background-color: #ffcc66;
+        display: block;
+        position: relative;
+        top: 5.3vw;
+        align-items: center;
+    }
+    
+    .logo {
+        width: 22.3vw;
+        height: 7.7vw;
+        overflow: hidden;
+        float: left;
+        align-items: center;
+        margin-left: 1vw;
+    }
+    
+    .logo a img {
+        width: 22.3vw;
+        height: 7.7vw;
+        background-color: #ffcc66;
+    }
+
+    .open-menu {
+        display: block;
+        align-content: center;
+    }
+
+    .open-menu button {
+        float: right;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .open-menu button img {
+        width: 9.9vw;
+        height: 7.5vw;
+        background-color: transparent;
+        
+    }
+
+    .main-menu {
+        display: none;
+        width: 100vw;
+        height: 100%;
+        position: absolute;
+        right: 0vw;
+        padding: 0vw;
+        align-items: center;
+        z-index: 1;
+        margin-top: 10vw;
+    }
+    
+    .main-menu ul {
+    
+    width: 100vw;
+        height: 100vw;
+    padding: 0vw 0vw;
+    align-items: center;
+    }
+    
+    .main-menu ul li {
+    list-style-type: none;
+    float: left;
+    background-color: transparent;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    height: 20vw;
+    background-color: #663300;
+    opacity: 0.8;
+    }
+    
+    .main-menu ul li:hover {
+        background-color: #663300;
+        opacity: 1;
+    }
+
+
+    .main-menu ul li a {
+        text-decoration: none;
+        padding: 5vw 3vw;
+        text-align: center;
+        font-size: 7.2vw;
+        position: relative;
+        display: block;
+        border: 0vw solid black;
+        border-bottom: 0.1vw solid black;
+        background-color: transparent;
+        border-radius: 0vw;
+        height: 20vw;
+        
+    }
+
+    .show {display:block;}
+    
+
+    
+    .wrapper {
+        background-color: transparent;
+        width: 100vw;
+        height: fit-content;
+        margin-top: 7vw;
+        display: block;
+        position: relative;
+    }
+    
+    .main-att {
+        background-color: black;
+        width: 100vw;
+        height: 55.5vw;
+        overflow: hidden;
+    }
+    
+    .wrapper .main-att .cakepic a img {
+        width: 100vw;
+    }
+    
+    .sub-att {
+        width: 100vw;
+        height: fit-content;
+        background-color: white;    
+        margin-top: 1vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        
+    }
+    
+    .sub-att .columns {
+        width: 90vw;
+        height: 90vw;
+        background-color: black;
+        overflow: hidden;
+        margin-bottom: 1vw;
+    }
+
+    .sub-att .columns .image {
+        display: block;
+        width: auto;
+        height: 100%;
+        opacity: 0.5;
+    }
+    
+    .sub-att .cakes {
+        margin-right: 0vw;
+        margin-left: 0vw;
+    }
+    
+    .sub-att .bake-request {
+        margin-right: 0vw;
+        margin-left: 0vw;
+    }
+    
+    .sub-att .columns .text {
+        text-align: center;
+        vertical-align: middle;
+        margin-top: 18vw;
+        margin-bottom: auto;
+        background-color: transparent;
+        transform: scale(1);
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+    
+    .sub-att .columns .text h4 {
+        color: white;
+        background-color: transparent;
+        font-size: 7.2vw;
+    }
+    
+    .sub-att .columns .text button {
+        width: 50vw;
+        height: 10vw;
+        margin-top: -1vw;
+        background-color: #ffcc66;
+        box-shadow: 0.1vw 0.1vw #663300;
+        border: 1vw solid #663300;
+        padding-bottom: 1vw;
+    }
+
+    .sub-att .columns .text button a {
+        text-decoration: none;
+        color: white;
+        background-color: transparent;
+        text-decoration: solid;
+        font-size: 4.3vw;
+        padding-left: 12vw;
+        padding-right: 12vw;
+    }
+    
+    .sub-att .columns .text p {
+        color: white;
+        background-color: transparent;
+        font-size: 3.6vw;
+        line-height: 6vw;
+    }
+    
+    .sub-att .baking-tips .text {
+        margin-top: 2vw;
+    }
+    
+    footer {
+        height: 10vw;
+        width: 100vw;
+        background-color: #663300;
+        position: relative;
+        margin-top: 5vw;
+    }
+    
+
+
+
+
+
+
+}
