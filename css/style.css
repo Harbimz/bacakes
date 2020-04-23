@@ -275,6 +275,8 @@ footer {
 .wrapper h3 {
     text-align: center;
     padding-top: 2vw;
+    background-color: transparent;
+    font-size: 2.2vw;
 }
 
 .wrapper .cake {
@@ -285,11 +287,39 @@ footer {
     display: block;
     position: relative;
     background-color: #663300;
+    overflow: hidden;
 }
 
+.wrapper .cake img {
+    height: 100%;
+}
 
+.wrapper .cake .details {
+    position: absolute;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 1;
+    width: 100%;
+    height: 20%;
+    bottom: 0;
+    right: 0;
+}
 
+.wrapper .cake .details .cakename {
+    float: left;
+    margin-left: 1vw;
+    background-color: transparent;
+    color: white;
+    font-size: 1.8vw;
+}
 
+.wrapper .cake .details .price {
+    float: right;
+    margin-right: 1vw;
+    background-color: transparent;
+    color: white;
+    font-size: 1.8vw;
+}
 
 
 
@@ -635,6 +665,56 @@ footer {
         position: relative;
         margin-top: 5vw;
     }
+    
+    .wrapper h3 {
+        text-align: center;
+        padding-top: 2vw;
+        background-color: transparent;
+        font-size: 3.3vw;
+    }
+    
+    .wrapper .cake {
+        height: 90vw;
+        width: 90vw;    
+        margin: 1vw 5vw;
+        float: left;
+        display: block;
+        position: relative;
+        background-color: #663300;
+        overflow: hidden;
+    }
+    
+    .wrapper .cake img {
+        height: 100%;
+    }
+    
+    .wrapper .cake .details {
+        position: absolute;
+        background-color: black;
+        opacity: 0.8;
+        z-index: 1;
+        width: 100%;
+        height: 20%;
+        bottom: 0;
+        right: 0;
+    }
+    
+    .wrapper .cake .details .cakename {
+        float: left;
+        margin-left: 1vw;
+        background-color: transparent;
+        color: white;
+        font-size: 5.8vw;
+    }
+    
+    .wrapper .cake .details .price {
+        float: right;
+        margin-right: 1vw;
+        background-color: transparent;
+        color: white;
+        font-size:  5.8vw;
+    }
+    
     
 
 
