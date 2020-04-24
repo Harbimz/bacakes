@@ -8,6 +8,7 @@
     src: url(fonts/comic_sans_MS.woff);
  }
 
+
  .clear {
      clear: both;
  }
@@ -321,11 +322,110 @@ footer {
     font-size: 1.8vw;
 }
 
+.bakery-profile {
+    width: 98vw;
+    height: 50vw;
+    background-color: #663300;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1vw;
+    display: block;
+}
 
+.bakery-profile .about-company {
+    width: 35vw;
+    height: auto;
+    background-color: transparent;
+    float: left;
+    display: block;
+}
 
+.bakery-profile .about-company p {
+    background-color: transparent;
+    font-size: 1.6vw;
+    color: white;
+    text-align: justify;
+}
 
+.bakery-profile .company-photos {
+    width: 60vw;
+    height: 48vw;
+    background-color: transparent;
+    float: right;
+    display: block;
+}
 
+.bakery-profile .company-photos .main {
+    width: 100%;
+    height: 23vw;
+    margin-bottom: 1vw;
+    background-color: #ffcc66;
+    display: block;
+}
 
+.bakery-profile .company-photos .others {
+    height: 24vw;
+    width: 19vw;
+    float: left;
+    background-color: #ffcc66;
+    display: block;
+}
+
+.bakery-profile .company-photos .margin-left {
+    margin-left: 1.5vw;
+} 
+
+.staff-profile {
+    width: 98vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vw;
+    position: relative;
+    background-color: transparent;
+}
+
+.staff-profile .rows {
+    margin-top: 1vw;
+    background-color: transparent;
+}
+
+.staff-profile .rows img {
+    width: 30vw;
+    height: 30vw;
+    position: relative;
+    background-color: #663300;
+    float: left;
+}
+
+.staff-profile .rows .profile {
+    float: right;
+    width: 65vw;
+    background-color: transparent;
+
+}
+
+.staff-profile .rows .profile h1 {
+    font-size: 3vw;
+    text-align: right;
+    background-color: transparent;
+    margin-bottom: 0vw;
+}
+
+.staff-profile .rows .profile h3 {
+    font-size: 2vw;
+    text-align: right;
+    background-color: transparent;
+    margin-top: 0vw;
+}
+
+.staff-profile .profile p {
+    font-size: 1.6vw;
+    background-color: transparent;
+    text-align: right;
+    text-align: justify;
+    
+}
 
 
 
@@ -715,7 +815,106 @@ footer {
         font-size:  5.8vw;
     }
     
+    .bakery-profile {
+        width: 98vw;
+        height: 103vw;
+        background-color: #663300;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1vw;
+        display: block;
+    }
     
+    .bakery-profile .about-company {
+        width: 96vw;
+        height: auto;
+        background-color: transparent;
+        float: none;
+    }
+    
+    .bakery-profile .about-company p {
+        background-color: transparent;
+        font-size: 1.6vw;
+        color: white;
+        text-align: justify;
+    }
+    
+    .bakery-profile .company-photos {
+        width: 96vw;
+        height: auto;
+        background-color: transparent;
+        float: none;
+    }
+    
+    .bakery-profile .company-photos .main {
+        width: 96vw;
+        height: 43vw;
+        margin-bottom: 1vw;
+        background-color: #ffcc66;
+    }
+    
+    .bakery-profile .company-photos .others {
+        height: 33vw;
+        width: 31vw;
+        float: left;
+        background-color: #ffcc66;
+    }
+    
+    .bakery-profile .company-photos .margin-left {
+        margin-left: 1.5vw;
+    } 
+    
+    .staff-profile {
+        width: 98vw;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5vw;
+        position: relative;
+        background-color: transparent;
+    }
+    
+    .staff-profile .rows {
+        margin-top: 1vw;
+        background-color: transparent;
+    }
+    
+    .staff-profile .rows img {
+        width: 30vw;
+        height: 30vw;
+        position: relative;
+        background-color: #663300;
+        float: left;
+    }
+    
+    .staff-profile .rows .profile {
+        float: right;
+        width: 65vw;
+        background-color: transparent;
+    
+    }
+    
+    .staff-profile .rows .profile h1 {
+        font-size: 3vw;
+        text-align: right;
+        background-color: transparent;
+        margin-bottom: 0vw;
+    }
+    
+    .staff-profile .rows .profile h3 {
+        font-size: 2vw;
+        text-align: right;
+        background-color: transparent;
+        margin-top: 0vw;
+    }
+    
+    .staff-profile .profile p {
+        font-size: 1.6vw;
+        background-color: transparent;
+        text-align: right;
+        text-align: justify;
+        
+    }    
 
 
 
