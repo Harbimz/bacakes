@@ -1,5 +1,5 @@
 * {
-    background-color: aliceblue;
+    background-color: transparent;
     box-sizing: border-box;
 }
 
@@ -377,12 +377,13 @@ footer {
 
 .staff-profile {
     width: 98vw;
-    height: auto;
+    height: 157vw;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5vw;
     position: relative;
     background-color: transparent;
+    padding: 1vw;
 }
 
 .staff-profile .rows {
@@ -427,8 +428,120 @@ footer {
     
 }
 
+.wrapper .contact {
+    width: 98vw;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #663300;
+    margin-top: 7vw;
+    display: block;
+    align-content: center;
+}
+
+.wrapper .contact h3 {
+    color: white;
+    margin-bottom: 0vw;
+}
+
+.wrapper .contact  .contact-option {
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: max-content;
+    background-color: transparent;
+    height: 6vw;
+    padding-top: 1.5vw;
+}
 
 
+
+.wrapper .contact  .contact-option a img {
+    width: 3.5vw;
+    float: left;
+    background-color: transparent;
+}
+
+.wrapper .contact  .contact-option a p {
+    font-size: 2.3vw;
+    width: max-content;
+    float: left;
+    margin-top: 0vw;
+    background-color: transparent;
+    color: white;
+}
+
+.wrapper .contact  .contact-option a.margin-right {
+    margin-right: 2vw;
+    float: left;
+    background-color: transparent;
+}
+
+form.bake-request {
+    border-radius: 5px;
+    background-color: #663300;
+    padding: 20px;
+    width: 98vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    color: white;
+  }
+
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+  .col-50 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+  }
+
+
+  input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    color: white;
+  }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  input[type=submit] {
+    background-color: #ffcc66;
+    color: black;
+    padding: 12px 20px;
+    border: 0.1vw solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 1vw;
+  }
+
+    select input[type=text]{
+    border: 0.1vw solid #ffcc66;
+    }
 
 
 
@@ -462,7 +575,7 @@ footer {
 @media only screen and (max-width:620px) {
     /*  For mobile phones:*/
     * {
-        background-color: aliceblue;
+        background-color: transparent;
         box-sizing: border-box;
     }
     
@@ -860,65 +973,94 @@ footer {
         background-color: #ffcc66;
     }
     
-    .bakery-profile .company-photos .margin-left {
-        margin-left: 1.5vw;
-    } 
-    
-    .staff-profile {
-        width: 98vw;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 5vw;
-        position: relative;
+    .wrapper .contact h3 {
+       display: none;
+    }
+
+    .wrapper .contact {
+        height: 70vw;
+        padding: 2.9vw;
+    }
+
+    .wrapper .contact  .contact-option {
+        margin-left: 1vw;
+        display: block;
+        width: max-content;
         background-color: transparent;
+        height: 10vw;
+        padding-top: 1.5vw;
     }
     
-    .staff-profile .rows {
+    .wrapper .contact  .contact-option a img {
+        width: 8vw;
+    }
+
+    .wrapper .contact  .contact-option a p {
+        font-size: 5.3vw;
+        width: max-content;
+        float: left;
         margin-top: 1vw;
         background-color: transparent;
+        color: white;
+    }
+
+    .wrapper .contact  .contact-option a.margin-right {
+        margin-right: 2vw;
+        float: none;
+        background-color: transparent;
+    }
+
+    .wrapper .contact  .contact-option a {
+        display: block;
     }
     
-    .staff-profile .rows img {
-        width: 30vw;
-        height: 30vw;
-        position: relative;
-        background-color: #663300;
+    .col-25 {
+        width: 100%;
+      }
+    
+      .col-50 {
         float: left;
-    }
+        width: 100%;
+        margin-top: 6px;
+      }
     
-    .staff-profile .rows .profile {
+    
+      input[type=text], select, textarea{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+        color: white;
+      }
+    
+      label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+      }
+    
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    
+      input[type=submit] {
+        background-color: #ffcc66;
+        color: black;
+        padding: 12px 20px;
+        border: 0.1vw solid white;
+        border-radius: 4px;
+        cursor: pointer;
         float: right;
-        width: 65vw;
-        background-color: transparent;
+        margin-top: 1vw;
+      }
     
-    }
+        select input[type=text]{
+        border: 0.1vw solid #ffcc66;
+        }
     
-    .staff-profile .rows .profile h1 {
-        font-size: 3vw;
-        text-align: right;
-        background-color: transparent;
-        margin-bottom: 0vw;
-    }
-    
-    .staff-profile .rows .profile h3 {
-        font-size: 2vw;
-        text-align: right;
-        background-color: transparent;
-        margin-top: 0vw;
-    }
-    
-    .staff-profile .profile p {
-        font-size: 1.6vw;
-        background-color: transparent;
-        text-align: right;
-        text-align: justify;
-        
-    }    
-
-
-
-
 
 
 }
