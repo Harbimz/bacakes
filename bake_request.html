@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bacakes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/script.js"></script>
+    
+</head>
+<body>
+    <div class="top">
+        <div class="user">
+            <ul>
+                <li><a class="signup" href="#">SIGNUP</a></li>
+                <li>|</li>
+                <li><a class="login" href="#">LOGIN</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header">
+        <div  class="logo">
+            <a href="index.html"><img src="logos/black .png" alt=""></a>
+        </div>
+        <div class="open-menu">
+            <button onclick="menuFunction()"><img src="icons/open-menu.png" alt=""></button>
+        </div>
+            <nav class="main-menu" id="myMenu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="cakes.html">CAKES</a></li>
+                <li><a href="bake_request.html">BAKE REQUEST</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+    <div class="clear"></div>
+    <div class="wrapper">
+        <form class="bake-request" action="bake_request.php" method="GET">
+            <div class="row">
+                <div class="col-25">
+                  <label for="fname">First Name</label>
+                </div>
+                <div class="col-50">
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="lname">Last Name</label>
+              </div>
+              <div class="col-50">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                  <label for="cakesize">Cake Size</label>
+                </div>
+                <div class="col-25">
+                    <select name="cakesize" id="cakesize">
+                        <option value="8">8</option>
+                        <option value="10">10</option>
+                        <option value="12">12</option>
+                        <option value="14">14</option>
+                        <option value="16">16</option>
+                    </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="flavour">Flavour</label>
+                </div>
+                <div class="col-25">
+                  <select name="flavour" id="flavour">
+                      <option value="chocolate">Chocolate</option>
+                      <option value="banana">Banana</option>
+                      <option value="vanilla">Vanilla</option>
+                      <option value="strawberry">Strawberry</option>
+                      <option value="apple">Apple</option>
+                  </select>
+              </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="maincolor">Main Color</label>
+                </div>
+                <div class="col-25">
+                  <select name="maincolor" id="maincolor">
+                      <option value="white">White</option>
+                      <option value="blue">Blue</option>
+                      <option value="red">Red</option>
+                      <option value="black">Black</option>
+                      <option value="brown">Brown</option>
+                  </select>
+              </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="supcolor">Supplementary Color</label>
+                </div>
+                <div class="col-25">
+                  <select name="supcolor" id="supcolor">
+                      <option value="pink">Pink</option>
+                      <option value="aqua">Aqua</option>
+                      <option value="peach">Peach</option>
+                      <option value="lemon">Lemon</option>
+                      <option value="white">White</option>
+                  </select>
+              </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="occasion">Occasion</label>
+                </div>
+                <div class="col-25">
+                  <select name="occasion" id="occasion">
+                      <option value="birthday">Birthday</option>
+                      <option value="wedding">Wedding</option>
+                      <option value="anniversary">Anniversary</option>
+                      <option value="graduation">Graduation</option>
+                      <option value="matric">Matric</option>
+                  </select>
+              </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="recipient">Recipient</label>
+                </div>
+                <div class="col-50">
+                  <input type="text" id="recipient" name="recipient" placeholder="Recipient's name..">
+                </div>
+              </div>
+              <div class="row">
+                <input type="submit" value="Submit">
+              </div>
+        </form>
+    </div>
+    </body>
