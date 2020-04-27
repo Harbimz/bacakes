@@ -15,31 +15,34 @@
 
 body {
     background-color: #ffcc66;
-    width: 100vw;
+    width: 100%;
     height: fit-content;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0vw;
+    position: absolute;
 }
 
 .top {
     background-color: #663300;
-    width: 100vw;
+    width: 100%;
     height: 2.8vw;
     top: 0vw;
     position: absolute;
     align-items: center;
+    
 }
 
 .header {
     height: 7.5vw;
-    width: 100vw;
+    width: 100%;
     border: 0.1vw solid black;
     background-color: #ffcc66;
     display: flex;
     position: relative;
     top: 2.8vw;
     align-items: center;
+    
 }
 
 .logo {
@@ -114,6 +117,7 @@ position: relative;
     padding: 0vw;
     top: 0vw;
     align-items: center;
+    right: 0vw;
 }
 
 .user ul {
@@ -150,16 +154,18 @@ position: relative;
 
 .wrapper {
     background-color: transparent;
-    width: 100vw;
+    width: 100%;
     height: fit-content;
     margin-top: 4vw;
 }
 
 .main-att {
     background-color: black;
-    width: 100vw;
+    width: 98%;
     height: 50vw;
     overflow: hidden;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 .wrapper .main-att .cakepic a img {
@@ -167,17 +173,19 @@ position: relative;
 }
 
 .sub-att {
-    width: 100vw;
+    width: 98%;
     height: fit-content;
     background-color: white;    
     margin-top: 1vw;
     padding-left: 0vw;
     padding-right: 0vw;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 .sub-att .columns {
-    width: 32vw;
-    height: 30vw;
+    width: 32.66666666666667%;
+    height: 31.3333333333333vw;
     background-color: black;
     float: left;
     overflow: hidden;
@@ -191,13 +199,17 @@ position: relative;
 }
 
 .sub-att .cakes {
-    margin-right: 1vw;
-    margin-left: 0vw;
+    margin-right: 1%;
+    margin-left: 0%;
 }
 
 .sub-att .bake-request {
-    margin-right: 1vw;
-    margin-left: 1vw;
+    margin-right: 1%;
+    margin-left: 0%;
+}
+
+.sub-att .baking-tips {
+    margin-left: 0%;
 }
 
 .sub-att .columns .text {
@@ -266,11 +278,11 @@ position: relative;
 
 footer {
     height: 4vw;
-    width: 100vw;
+    width: 100%;
     background-color: #663300;
     position: relative;
     margin-top: 5vw;
-
+    
 }
 
 .wrapper h3 {
@@ -282,8 +294,8 @@ footer {
 
 .wrapper .cake {
     height: 30vw;
-    width: 31.3333333vw;    
-    margin: 1vw;
+    width: 31.333333333333333333%;    
+    margin: 1%;
     float: left;
     display: block;
     position: relative;
